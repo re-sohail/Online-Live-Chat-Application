@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.navbar{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 30px;
+    border-bottom: 2px solid #DFDFDF;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    width: 40%;
+    padding: 5px 10px;
+    background: #F5F5F5;
+}
+.left-side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left-side i{
+    padding-right: 10px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #778097;
+}
+.left-side input{
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 20px;
+    color: #778097;
+}
+.right-side{
+    display: flex;
+    align-items: center;
+}
+.right-side i{
+    margin-right: 10px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #000000;
+    background: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.right-side h1{
+    font-size: 25px;
+    font-weight: 500;
+    color: #000000;
+    background: #ffffff;
+    padding: 3px 20px;
+    border-radius: 5px;
+    user-select: none;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 18%;
+}
+.profile i{
+    font-size: 30px;
+    position: relative;
+    font-weight: 500;
+    cursor: pointer;
+}
+.profile>i::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 25px;
+    background: #778097;
+    top: 2px;
+    right: -20px;
+}
+.profile>img{
+    width: 35px;
+    cursor: pointer;
+}
+.text{
+    margin-left: -25px;
+    user-select: none;
+    cursor: pointer;
+}
+.text h3{
+    font-size: 14px;
+}
+.text p{
+    font-size: 10px;
+}
+.main-body{
+    width: 100%;
+    height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left-part{
+    width: 28%;
+    height: 100%;
+    border: 2px solid #DFDFDF;
+    border-top: none;
+    padding: 40px 40px 20px 30px ;
+    overflow: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+.left-part h2{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.image{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    border-bottom: 2px solid #DFDFDF;
+}
+.image img{
+    width: 45px;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.image>i{
+    cursor: pointer;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.users{
+    padding-top: 25px;
+}
+.user-chat{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.user-chat img{
+    width: 50px;
+    margin-right: 20px;
+}
+.name-chat{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 8px;
+}
+.name-chat h2{
+    font-size: 16px;
+    font-weight: 600;
+    user-select: none;
+}
+.name-chat p{
+    user-select: none;
+    font-size: 12px;
+    font-weight: 400;
+}
+.right-part{
+    width: 70%;
+    height: 100%;
+    border: 2px solid #DFDFDF;
+    border-top: none;
+}
+.user-profile-header{
+    width: 100%;
+    height: 90px;
+    background: #ffff;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.user-chats-section{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.user-chats-section img{
+    width: 50px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.user-name-chat h2{
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+.user-name-chat p{
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.call-option{
+    display: flex;
+    align-items: center;
+    width: 16%;
+    justify-content: space-between;
+}
+.call-option i{
+    font-size: 22px;
+    cursor: pointer;
+}
+.call{
+    background: #F5F5F5;
+    width: 100px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    border-radius: 5px;
+    position: relative;
+}
+.call i:nth-child(1)::after{
+    content: '';
+    width: 2px;
+    height: 20px;
+    background: #DFDFDF;
+    position: absolute;
+    top: 7px;
+    left: 50px;
+}
+.chat-section{
+    width: 100%;
+    height: 65vh;
+    background: #F8F8F8;
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+}
+.first-msg{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.first-msg img{
+    width: 40px;
+    margin-right: 20px;
+    display: flex;
+    cursor: pointer;
+}
+.msg{
+    width: 340px;
+    font-size: 14px;
+    background: #ffffff;
+    padding: 17px 20px;
+    border-radius: 10px;
+}
+.sent{
+    align-self: flex-end;
+}
+.sent img{
+    margin-right: none;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.recieve{
+    align-self: flex-start;
+}
+span{
+    color: rgb(5, 109, 255);
+}
+.msg-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+}
+.choose-file i{
+    font-size: 25px;
+    position: relative;
+    cursor: pointer;
+}
+.choose-file i:nth-child(2){
+    margin-left: 30px;
+}
+.choose-file i:nth-child(1)::after{
+    content: '';
+    position: absolute;
+    left: 40px;
+    top: 0;
+    width: 2px;
+    height: 25px;
+    background: #5f5f5f;
+}
+.write-msg{
+    width: 80%;
+    border: 2px solid #77809783;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+.write-msg input{
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+}
+.msg-section>i{
+    font-size: 25px;
+    cursor: pointer;
+}
