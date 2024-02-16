@@ -72,30 +72,38 @@
 .profile{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: 18%;
+    justify-content: center;
+    width: 23%;
+    gap: 40px;
 }
 .profile i{
-    font-size: 30px;
+    font-size: 25px;
     position: relative;
     font-weight: 500;
     cursor: pointer;
 }
-.profile>i::after{
+.profile>i:nth-child(1){
+    margin-right: -20px;
+}
+.profile>i:nth-child(2):after{
     content: '';
     position: absolute;
     width: 2px;
-    height: 25px;
+    height: 23px;
     background: #778097;
-    top: 2px;
+    top: 1px;
     right: -20px;
 }
-.profile>img{
+.user-profile{
+    display: flex;
+    align-items: center;
+}
+.user-profile>img{
     width: 35px;
     cursor: pointer;
 }
 .text{
-    margin-left: -25px;
+    margin-left: 20px;
     user-select: none;
     cursor: pointer;
 }
@@ -104,6 +112,247 @@
 }
 .text p{
     font-size: 10px;
+}
+.friend-request-wrap{
+    position: absolute;
+    top: 11%;
+    right: 20px;
+    width: 370px;
+    height: 87vh;
+    border-radius: 5px;
+    background: #F8F8F8;
+    z-index: 1;
+    max-height: 0vh;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: max-height 0.2s;
+}
+.friend-request-wrap.open-request{
+    max-height: 100vh;
+}
+.friend-request{
+    padding: 20px 30px;
+}
+.friend-requests-data{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.friend-requests-data h1{
+    font-size: 20px;
+    font-weight: 600;
+}
+.friend-requests-data i{
+    font-size: 20px;
+    cursor: pointer;
+}
+.friend-request hr{
+    border: 0;
+    height: 2px;
+    width: 100%;
+    background: #959595;
+    margin: 20px 0 10px;
+}
+.friend-request-data{
+    overflow: scroll;
+    height: calc(87vh - 110px);
+}
+.user-friend-request{
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+}
+.user-friend-request img{
+    width: 50px;
+}
+.friend-request-text{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0 20px;
+}
+.friend-request-text p{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.friend-request-text p:nth-child(2){
+    font-size: 10px;
+    font-weight: 400;
+    color: #4685FB;
+}
+.friend-request-text p span{
+    color: #000000;
+    font-weight: 600;
+}
+.friend-request-btn{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    /* margin-top: 10px; */
+}
+.friend-request-btn button{
+    margin: 5px 7px 0;
+    padding: 3px 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: #0D60EE;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.friend-request-btn button:nth-child(2){
+    background: #E4E6EB;
+    color: black;
+}
+.notification-wrap{
+    position: absolute;
+    top: 11%;
+    right: 20px;
+    width: 370px;
+    height: 87vh;
+    border-radius: 5px;
+    background: #F8F8F8;
+    z-index: 1;
+    overflow: scroll;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-height: 0vh;
+    transition: max-height 0.2s;
+}
+.notification-wrap.open-bar{
+    max-height: 100vh;
+}
+.notification{
+    padding: 20px 30px;
+}
+.notification-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.notification-info h1{
+    font-size: 20px;
+    font-weight: 600;
+}
+.notification-info i{
+    font-size: 20px;
+    cursor: pointer;
+}
+.notification hr{
+    border: 0;
+    height: 2px;
+    width: 100%;
+    background: #959595;
+    margin: 20px 0;
+}
+.notification-data{
+    overflow: scroll;
+    height: calc(87vh - 110px);
+}
+.user-notification{
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.5s;
+    border-radius: 5px;
+}
+.user-notification:hover{
+    background: #ffffff;
+    border-radius: 5px;
+}
+.user-notification img{
+    width: 45px;
+}
+.text-with-time>p{
+    font-size: 13px;
+    font-weight: 400;
+}
+.text-with-time>p:nth-child(2){
+    font-size: 10px;
+    color: rgba(1, 111, 255, 0.82);
+}
+.text-with-time>p span{
+    color: #000000;
+    font-weight: 600;
+}
+.sub-menu-wrap{
+    position: absolute;
+    top: 11%;
+    right: 20px;
+    width: 280px;
+    border-radius: 5px;
+    background: #F8F8F8;
+    z-index: 1;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.sub-menu-wrap.open-menu{
+    max-height: 400px;
+}
+.sub-menu{
+    padding: 20px 30px;
+}
+.user-information{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+.user-information img{
+    width: 50px;
+}
+.txt{
+    line-height: 23px;
+}
+.txt h2{
+    font-size: 18px;
+    font-weight: 700;
+}
+.sub-menu hr{
+    border: 0;
+    width: 100%;
+    height: 2px;
+    background: #959595;
+    margin: 20px 0;
+}
+.sub-menu-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.sub-menu-link:hover{
+    transform: translateX(10px);
+}
+.sub-menu-link>i{
+    font-size: 20px;
+}
+.first{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+.first i{
+    font-size: 18px;
+}
+.first h2{
+    font-size: 16px;
+    font-weight: 400;
+}
+.first:hover h2, .first:hover i{
+    font-weight: 500;
 }
 .main-body{
     width: 100%;
@@ -118,9 +367,6 @@
     border: 2px solid #DFDFDF;
     border-top: none;
     padding: 40px 40px 20px 30px ;
-    overflow: scroll;
-    scrollbar-width: thin;
-    scrollbar-color: transparent transparent;
 }
 .left-part h2{
     font-size: 20px;
@@ -131,14 +377,19 @@
     display: flex;
     align-items: center;
     justify-content: start;
-    gap: 10px;
     border-bottom: 2px solid #DFDFDF;
 }
-.image img{
+.scroll-for-online{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+
+}
+.scroll-for-online img{
     width: 45px;
     object-fit: cover;
     object-position: center;
-    position: relative;
     margin-bottom: 30px;
     cursor: pointer;
 }
@@ -146,6 +397,15 @@
     cursor: pointer;
     margin-bottom: 30px;
     font-size: 30px;
+}
+.image>i:nth-child(1){
+    display: none;
+}
+.for-user-scroll{
+    height: calc(100vh - 170px);
+    overflow: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
 }
 .users{
     padding-top: 25px;
