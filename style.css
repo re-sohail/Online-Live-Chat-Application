@@ -504,7 +504,6 @@
 .chat-section{
     width: 100%;
     height: 65vh;
-    /* background: #F8F8F8; */
     background-image: url('img/chat-bg.png');
     background-position: center;
     background-size: cover;
@@ -590,10 +589,6 @@ span{
     width: 100%;
     height: 100vh;
     background: #ffff;
-    /* background-image: url('img/chat-bg.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; */
     position: relative;
     display: flex;
     align-items: center;
