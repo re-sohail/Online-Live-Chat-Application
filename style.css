@@ -504,7 +504,11 @@
 .chat-section{
     width: 100%;
     height: 65vh;
-    background: #F8F8F8;
+    /* background: #F8F8F8; */
+    background-image: url('img/chat-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 40px 50px;
     display: flex;
     flex-direction: column;
@@ -581,4 +585,162 @@ span{
 .msg-section>i{
     font-size: 25px;
     cursor: pointer;
+}
+.Login-main-page{
+    width: 100%;
+    height: 100vh;
+    background: #ffff;
+    /* background-image: url('img/chat-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-nav{
+    width: 100%;
+    height: 250px;
+    background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.login-page{
+    width: 60%;
+    height: 70vh;
+    background: #ffffff;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #00000074;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.l-side{
+    width: 45%;
+    height: 100%;
+    background-image: url('img/login-img.avif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.r-side{
+    width: 55%;
+    height: 100%;
+}
+.r-side form{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 0 40px;
+}
+.r-side>form h1{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.login-email, .login-password{
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1.5px solid rgba(192, 192, 192, 0.748);
+    display: flex;
+    align-items: center;
+}
+.login-password{
+    margin: 0 0 10px;
+}
+.login-email input, .login-password input{
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+.remeber-forget{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.remeber{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.remeber p{
+    font-size: 14px;
+}
+.remeber-forget a{
+    font-size: 14px;
+}
+.r-side form>input{
+    padding: 10px 40px;
+    width: 100%;
+    margin: 15px 0;
+    background: #191C3B;
+    border: none;
+    outline: none;
+    color: #DFDFDF;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.r-side form>button{
+    background: transparent;
+    border: 1.4px solid rgba(192, 192, 192, 0.748);
+    color: #000000;
+    padding: 10px 40px;
+    width: 100%;
+    margin: 15px 0;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.r-side form>button i{
+    margin-right: 10px;
+}
+.r-side form p{
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+.r-side form>p::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 45%;
+    height: 2px;
+    background: #00000074;
+    border-radius: 50px;
+}
+.r-side form>p::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 45%;
+    height: 2px;
+    background: #00000074;
+    border-radius: 50px;
+}
+.r-side form>h5{
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0 auto;
 }
