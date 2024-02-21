@@ -101,3 +101,20 @@ backButton.addEventListener('click', ()=>{
 //     subMenu.classList.remove('open-menu');
 //     notificationBar.classList.remove('open-bar');
 // });
+
+
+
+let users = document.querySelectorAll('.users');
+let leftpart = document.getElementById('left-part');
+let rightpart = document.getElementById('right-part');
+
+console.log(users);
+for  (let user of users){
+    user.addEventListener('click',()=>{
+        if (document.body.clientWidth <= 567 ) {
+        leftpart.style.display = 'none';
+        rightpart.style.display = 'block';
+        rightpart.style.width = '100%';
+        }
+    })
+}

@@ -1,0 +1,124 @@
+@media (max-width:1200px) {
+  .right-part{
+    width: 68%;
+  }
+  .left-part{
+    width: 30%;
+    padding: 40px 30px 20px 20px;
+  }
+  .profile{
+    width: 265px;
+  }
+  .choose-file{
+    width: 100px;
+  }
+  .call-option{
+    width: 150px;
+  }
+  .search{
+    width: 390px;
+  }
+}
+
+@media (max-width:992px) {
+  .login-page {
+    width: 75%;
+  }
+  .chat-section{
+    padding: 40px 10px;
+  }
+  .left-part{
+    width: 33%;
+    padding: 40px 10px 20px 20px;
+  }
+  .right-part{
+    width: 65%;
+    
+  }
+}
+@media (max-width:768px) {
+  .login-page {
+    width: 85%;
+  }
+  .first-msg>img{
+    display: none;
+  }
+  .msg{
+    width: 300px;
+  }
+  .msg-section{
+    padding: 15px 20px;
+  }
+  .choose-file i:nth-child(2) {
+    margin-left: 20px;
+}
+.text{
+  display: none;
+}
+.profile{
+  justify-content: end;
+}
+.user-chat img {
+  width: 35px;
+  margin-right: 10px;
+}
+.name-chat h2 {
+  font-size: 14px;
+}
+.user-chats-section img {
+  width: 40px;
+  margin-right: 10px;}
+  .scroll-for-online img {
+    width: 35px;}
+    .user-name-chat h2 {
+      font-size: 14px;
+    }
+    .name-chat p {
+      font-size: 10px;
+
+    }
+    .right-side{
+      display: none;
+    }
+  
+}
+@media (max-width:576px) {
+  .l-side{
+    display: none;
+  }
+  .r-side{
+    width: 100%;
+  }
+  .r-side form>h1{
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .right-part{
+    display: none;
+  }
+  .left-part{
+    width: 100%;
+  }
+  .search {
+    width: 170px;
+}
+.left-side input{
+  width: 100%;
+}
+.left-side i{
+  font-size: 20px;
+}
+.name-chat h2{
+  font-size: 16px;
+}
+.user-chat img {
+  width: 50px;
+  margin-right: 20px;
+}
+.name-chat p{
+  font-size: 12px;
+}
+.scroll-for-online img{
+  width: 50px;
+}
+}
