@@ -46,6 +46,7 @@
     background: transparent;
     font-size: 20px;
     color: #778097;
+    width: 70%
 }
 .right-side{
     display: flex;
